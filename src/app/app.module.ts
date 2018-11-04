@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpModule }      from '@angular/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,6 +15,9 @@ import { WorksComponent } from './works/works.component';
 import { CvComponent } from './cv/cv.component';
 import { ContactComponent } from './contact/contact.component';
 import { SocialComponent } from './social/social.component';
+
+
+
 
 const appRoutes: Routes = [
  // sets home page (base URL)
@@ -39,8 +44,10 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
+	HttpModule
   ],
-  providers: [],
+ providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
