@@ -1,2 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/font-awesome/css/font-awesome.css";
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900');
+/*3 fonts in one import*/
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Open+Sans:300,400,400i,600,700|Roboto:100,300,400,500&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+}
