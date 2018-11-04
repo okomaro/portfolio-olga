@@ -12,7 +12,6 @@ import { HomeComponent } from './home/home.component';
 import { WorksComponent } from './works/works.component';
 import { CvComponent } from './cv/cv.component';
 import { ContactComponent } from './contact/contact.component';
-import { ProjectComponent } from './project/project.component';
 import { SocialComponent } from './social/social.component';
 
 const appRoutes: Routes = [
@@ -33,7 +32,6 @@ const appRoutes: Routes = [
     WorksComponent,
     CvComponent,
     ContactComponent,
-    ProjectComponent,
     SocialComponent
   ],
   imports: [

@@ -3,17 +3,16 @@ li {
     list-style: none;
     display: inline-block;
     text-decoration: none;
+margin: 2px;
 }
 
-ul {
-    position: relative;
-    bottom: 70px;
-    margin-left: 20px;
-}
 
+
+/*
 ul li {
     display: inline-block;
 }
+*/
 
 ul li a {
     font-size: 2em;
@@ -22,7 +21,7 @@ ul li a {
     margin-left: 0.3em;
 }
 
-a:hover {
-    color: red;
-    opacity: 1;
+ul li a :hover {
+    color: pink;
+/*    opacity: 1;*/
 }
