@@ -1,12 +1,7 @@
 .circle-foto {
-	border-radius: 120px;
+	border-radius: 150px;
 }
 
-.circle-foto {
-    margin: auto;
-
-
-}
 
 .list-group {
 	list-style: none;
@@ -16,6 +11,5 @@
 	width:2.5em;
 	height: auto;
 	margin: 20px;
-	
 }
 

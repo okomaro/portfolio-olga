@@ -8,13 +8,14 @@ import { HttpModule }      from '@angular/http';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { WorksComponent } from './works/works.component';
 import { CvComponent } from './cv/cv.component';
 import { ContactComponent } from './contact/contact.component';
 import { SocialComponent } from './social/social.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -31,13 +32,13 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
     HomeComponent,
     WorksComponent,
     CvComponent,
     ContactComponent,
-    SocialComponent
+    SocialComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
