@@ -1,3 +1,11 @@
 ul li {
 	list-style: none;
 }
+
+/* For mobile phones: */
+@media only screen and (min-width: 768px) {
+
+	div p {
+		margin-top: 10px;
+	}
+}
