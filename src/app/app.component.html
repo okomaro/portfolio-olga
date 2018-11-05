@@ -1,27 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">welcome to {{title}} !</h1>
-    </div>
-
-    <div class="row">
-        <ul class="nav">
+<nav class="navbar navbar-light bg-light pr-3 pl-3">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/img/okomaro-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    okomaro:design
+  </a>
+	 <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a routerLink="home" routerLinkActive="active" class="btn btn-light">Home</a>
             </li>
             <li class="nav-item">
-                <a routerLink="works" routerLinkActive="active" class="btn btn-light">works</a>
+                <a routerLink="works" routerLinkActive="active" class="btn btn-light">My works</a>
             </li>
             <li class="nav-item">
                 <a routerLink="cv" routerLinkActive="active" class="btn btn-light">CV</a>
             </li>
         </ul>
+	
+</nav>
 
-
-    </div>
-
-</div>
 
 <router-outlet></router-outlet>
 

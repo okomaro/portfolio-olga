@@ -1,0 +1,11 @@
+.circle-foto {
+	border-radius: 120px;
+}
+
+.circle-foto .img-responsive {
+    margin: 0 auto;
+}
+
+.list-group {
+	list-style: none;
+}
