@@ -1,16 +1,15 @@
 .circle-foto {
-	border-radius: 150px;
-	max-width: 200px;
+    border-radius: 150px;
+    max-width: 200px;
+    width: 100%;
 }
 
-
 .list-group {
-	list-style: none;
+    list-style: none;
 }
 
 .logos img {
-	width:2.5em;
-	height: auto;
-	margin: 20px;
+    width: 2.5em;
+    height: auto;
+    margin: 20px;
 }
-
