@@ -27,6 +27,7 @@ input {
     transition: all 0.5s;
     cursor:cell;
     margin: 5px;
+
         }
 
 button {
@@ -47,21 +48,24 @@ button {
 .modulus  {
       width: 200px;
       margin: inherit;
+ }
 
+.reset  {
+      width: 100px;
+      margin: inherit;
  }
 
 .resultat {
   display: inline-block;
   float: left;
   width: inherit;
-  min-width: 260px;
+  min-width: 200px;
   text-overflow: inherit;
     border-radius: 4px;
       color: black;
       background-color: lightgrey;
       font-size: 25px;
       font-family: sans-serif;
-      border: 1px;
       margin: 5px 30px;
       padding: 30px;
   }
