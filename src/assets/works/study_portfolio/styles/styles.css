@@ -1,0 +1,533 @@
+@charset "UTF-8";
+
+/*Fonts used:
+
+font-family: 'Roboto Mono', monospace; - all headings 
+font-family: 'Roboto Condensed', sans-serif; - aside
+font-family: 'Cabin Sketch', cursive, normal; - may be logo
+font-family: 'Oxygen', sans-serif; - paragraph text
+font-family: 'Open Sans', sans-serif;
+font-family: 'Special Elite', normal, cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900');
+/*3 fonts in one import*/
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Open+Sans:300,400,400i,600,700|Roboto:100,300,400,500&subset=cyrillic,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+/*universal box-sizing and defaults*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	-webkit-box-sizing: border-box;  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+	-moz-box-sizing: border-box;  /* Firefox (desktop or Android) 28- */
+	box-sizing: border-box; /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+}
+.main-header h1, h2, h3, h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1;
+	text-transform: none;
+}
+/*general typography and headings*/
+
+h1 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2.3em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+/*	text-shadow: 4px 5px 10px lightgrey;*/
+}
+h2 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	line-height: 1.5em;
+/*	text-shadow: 4px 5px 10px lightgrey;*/
+}
+h3 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+	line-height: 1.5em;
+	border-bottom: solid 1px #efefef;
+}
+h4 {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	line-height: 1.5em;
+}
+p {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1em;
+	text-align: left;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	line-height: 1.5;
+}
+li {
+	margin-top: 1em;
+	list-style-position: inside;
+}
+/* page structure */
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 1rem;
+}
+
+section, article {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+
+/*all links in the document*/
+a {
+	text-decoration: none;
+	color: tomato;
+}
+a:hover {
+	cursor: pointer;
+}
+
+dato {
+	font-style:italic;
+	font-size: 0.75em;
+	color: grey;
+	
+}
+
+/*what happens in the main header*/
+
+.main-header {
+	min-height: 100px;
+	background: white;
+	width: 100%;
+	border-left: solid 50px #DBD9D9;
+	
+}
+
+.header-text {
+	overflow: hidden;
+	position: relative;
+	left: 100px;
+	top: 20px;
+	width: 70%;
+	color: #2E2D2D;
+
+}
+
+.header-text p {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2.3em;
+	margin-bottom: 1em;
+}
+
+.fun {
+	font-family: 'Cabin Sketch', normal;	
+}
+
+
+.header-image {
+	border: solid 5px white;
+	border-radius: 50%;
+	padding: 10px;
+	position: fixed;
+	overflow: visible;
+	top: 10px;
+	left: 10px;
+	width: 80px;
+	height: 80px;
+	box-shadow: -3px 15px 10px -5px rgba(0, 0, 0, .4);
+}
+.logo {
+	transition: all .5s;
+	overflow: visible;
+	z-index: 99;
+}
+.logo:hover {
+	transform: scale(1.2) rotate(20deg);
+}
+
+/*Return button*/
+.back_button {
+	font-size: 15px;
+	text-decoration: none;
+	color: #3a3a3a;
+	position: fixed;
+	top: 110px;
+	left: 25px;
+	font-family: 'Oxygen', sans-serif;
+	z-index: 99;
+}
+.back_button:hover {
+	color: red;
+}
+
+/*banners*/
+
+.canvas-container {
+	width: 800px;
+	
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+	border: none;
+}
+
+
+/*Navigation*/
+
+.navbar {
+	overflow: visible;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	min-height: 40px;
+	background-color: transparent;
+	text-align: center;
+	border-radius: 10px;
+	z-index: 99;
+}
+.navlist {
+	list-style: none;
+}
+
+.navlistitem {
+	z-index: 9;
+	display: inline-block;
+	text-decoration: none;
+	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, .4), inset 0 0 5px 0 rgba(0, 0, 0, .4);
+	margin: 5px;
+}
+
+.navlistitem a {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1em;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 20px;
+	background-color: white;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+.navlist a .logo:hover {
+	background-color: none;
+}
+.navlistitem a:hover {
+	color: white;
+	background-color: red;
+	border-radius: 10px;
+}
+
+
+/*Page layout and typography*/
+
+.core {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	border-left: solid 50px #DBD9D9;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 90px;
+}
+
+.section-header {
+	width: 100%;
+	padding: 0 50px;
+	float: left;
+	background-image: url(../images/Fibonacci_spiral_red_dot.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: 250px;
+	border-bottom: solid 1px #efefef;
+}
+.section-header p, h1 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 60%;
+}
+
+.full-width-content {
+	width: 100%;
+	padding: 50px 50px;
+	float: left;
+}
+.main-content {
+	width: 65%;
+	padding: 50px 70px;
+	float: left;
+	display: block;
+}
+
+.secondary-content {
+	width: 35%;
+	padding: 50px;
+	float: left;
+	display: block;
+	background-color: #efefef;
+	border-radius: 20px;
+	border: solid 1px #efefef;
+	position: relative;
+	top: 40px;
+	margin-bottom: 40px; /*in case the content is longer then the main content*/
+}
+
+.color_wrap
+{
+	padding: 50px;
+	float: left;
+	display: block;
+	background-color: #efefef;
+	border-radius: 20px;
+	border: solid 1px #efefef;
+	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, .4);
+	margin-bottom: 10px;
+}
+
+box {
+	height: 60px;
+	width: 60px;
+	border: solid 1px #efefef;
+	box-shadow: 0 15px 20px -5px rgba(0, 0, 0, .4);
+	display: block;
+	margin: 10px;	
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+aside {
+	margin-top: 1em;
+	font-size: 0.75em;
+	line-height: 1.2;
+	text-align: left;
+}
+/*Images*/
+.main-content img, .secondary-content img, article img {
+	box-shadow: -3px 10px 10px -3px rgba(0, 0, 0, .4);
+}
+
+/*what happens with my foto*/
+
+.main-image {
+	border-radius: 50%;
+	margin: 20px 20px 20px 0;
+	float: left;
+}
+
+
+/*scalable images*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*Styling page for Projects*/
+
+
+.flow-align {
+	padding: 10px 50px 40px 50px;
+	overflow: visible;
+	margin-top: 0;
+}
+
+article h2 {
+	border-bottom: solid 1px #efefef;
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+
+
+/*Boxes-links for projects*/
+.work {
+	display: inline-block;
+	background: white;
+	border-radius: 20px;
+	/*	padding: 10px;*/
+	height: 300px;
+	width: 300px;
+	margin: 0;
+	overflow: visible;
+	/*	box-shadow: -3px 15px 10px -5px rgba(0, 0, 0, .4), inset 0 0 5px 0 rgba(0, 0, 0, .2);*/
+	text-align: center;
+}
+.work a {
+	color: inherit;
+}
+
+.work h3 {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.work:hover {
+	background-color: #efefef;
+	opacity: 1;
+}
+
+.work-image {
+	margin: 10px;
+	background: white;
+	border-radius: 50%;
+	box-shadow: -3px 15px 10px -5px rgba(0, 0, 0, .4);
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	position: relative;
+	top: 25%;
+	border: thin solid #efefef;
+}
+
+.work-image:hover {
+	opacity: 1;
+}
+
+
+
+/*Styling form in the section contact me*/
+
+form {
+	width: 300px;
+}
+/* Style all input boxes */
+
+input, textarea {
+	width: 300px;
+	background: #efefef;
+	border: 1px solid #efefef;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 5px;
+	font-size: 0.9em;
+	color: #3a3a3a;
+}
+input .contact_data {
+	height: 100px;
+}
+textarea .message {
+	height: 300px;
+}
+/* Styling the input button */
+input[type=submit] {
+	width: 100px;
+	cursor: pointer;
+	padding: 15px;
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: red; /* Set a background color */
+	color: white; /* Text color */
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: -3px 15px 10px -5px rgba(0, 0, 0, .4);
+}
+input[type=submit]:hover {
+	background-color: #8A8989; /* Add a dark-grey background on hover */
+}
+
+/* Styling placeholder text cross-browser */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+ font-size: 12px;
+ color:#000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ font-size: 12px;
+ color: #000;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ font-size: 12px;
+ color: #000;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ font-size: 12px;
+ color: #000;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ font-size: 12px;
+ color: #000;
+}
+
+/*footer*/
+	
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background-color: white;
+	border-bottom: solid 5px red;
+	border-top: solid 1px #D9D7D7;
+/*	margin-top: 100px;*/
+}
+footer .copyright {
+	text-align: center;
+	position: relative;
+	top: 0.5em;
+	font-size: .75em;
+	line-height: 1.5;
+	font-family: 'Oxygen', sans-serif;
+}
+/*social media buttons*/
+	
+footer ul {
+	position: relative;
+	bottom: 70px;
+	margin-left: 20px;
+}
+footer ul li {
+	display: inline-block;
+}
+footer ul li a {
+	font-size: 2em;
+	color: lightpink;
+	text-decoration: none;
+	margin-left: 0.3em;
+}
+footer a:hover {
+	color: red;
+	opacity: 1;
+}
+/*Go to Top button*/
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 1.5em; /* Place the button at the bottom of the page */
+	right: 2em; /* Place the button 30px from the right */
+	margin-right: 2em;
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: red; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: -3px 15px 10px -5px rgba(0, 0, 0, .4);
+}
+#myBtn:hover {
+	background-color: #8A8989; /* Add a dark-grey background on hover */
+}
