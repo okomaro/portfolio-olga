@@ -1,0 +1,67 @@
+h1 {
+margin-left: 30px;
+margin-top: 50px;
+font-family: sans-serif;
+}
+
+form {
+    display: inline-block;
+    float: left;
+    border-radius: 4px;
+    color: #f4511e;
+    background-color: lightgrey;
+    border: 1px;
+    margin: 5px 30px;
+    padding: 30px;
+  }
+
+input {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    text-align:  center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor:cell;
+    margin: 5px;
+        }
+
+button {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    width: 50px;
+    transition: all 0.5s;
+    cursor:pointer;
+    margin: 20px 5px 5px 5px;
+  }
+
+.modulus  {
+      width: 200px;
+      margin: inherit;
+
+ }
+
+.resultat {
+  display: inline-block;
+  float: left;
+  width: inherit;
+  min-width: 260px;
+  text-overflow: inherit;
+    border-radius: 4px;
+      color: black;
+      background-color: lightgrey;
+      font-size: 25px;
+      font-family: sans-serif;
+      border: 1px;
+      margin: 5px 30px;
+      padding: 30px;
+  }

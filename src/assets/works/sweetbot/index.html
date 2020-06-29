@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sweetbot.design: web design, branding, web security, eCommerce and webshop solutions</title>
+	<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sweetbot index</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="script/jquery-3.2.1.min.js"></script>
+	<!-- loading jQuery plugin (https://github.com/flesler/jquery.scrollTo) -->
+    <script type="text/javascript" src="script/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="src/skdslider.min.js"></script>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#demo1').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+			jQuery('#demo2').skdslider({'delay':5000, 'animationSpeed': 1000,'showNextPrev':true,'showPlayButton':false,'autoSlide':true,'animationType':'sliding'});
+			jQuery('#demo3').skdslider({'delay':5000, 'animationSpeed': 2000,'showNextPrev':true,'showPlayButton':true,'autoSlide':true,'animationType':'fading'});
+			
+			jQuery('#responsive').change(function(){
+			  $('#responsive_wrapper').width(jQuery(this).val());
+			});
+			
+		});
+	</script>
+		<script type="text/javascript">
+	
+    // the famous document.ready function, takes an anonymous function as argument
+    $(document).ready(function(){
+        // all JS code goes here:
+        
+        // implementing the scrollTo plugin
+        
+        $("#navigation_container a").click(function(e){
+            e.preventDefault();
+            $(window).scrollTo(this.hash, 1000);
+            
+        });
+		 $("#footer_links a").click(function(e){
+            e.preventDefault();
+            $(window).scrollTo(this.hash, 1000);
+            
+        });
+});
+</script>
+<script>
+	// When the browser is ready...
+  $(function() {
+    // validate
+    $("#contactform").validate({
+        // Set the validation rules
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            message: "required",
+        },
+        // Specify the validation error messages
+        messages: {
+            name: "Please enter your name",
+            email: "Please enter a valid email address",
+            message: "Please enter a message",
+        },
+        // submit handler
+        submitHandler: function(form) {
+          //form.submit();
+           $(".message").show();
+           $(".message").fadeOut(4500);
+        }
+    });
+  });
+	</script>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link href="src/skdslider.css" rel="stylesheet" type="text/css">
+	<link href="css/demo.css" rel="stylesheet" type="text/css">
+	<link href="css/footer-distributed.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+	    <button onclick="myFunction()">Toggle Menu</button>
+
+<div class="navigation_bar">
+    <div id="navigation_container">
+        <a href="#home_content"><img src="Ikoner/Sweetbot_logo_blue.svg" alt="Sweetbot logo"/></a>
+            <div class="dropdown">
+                <a href="#services"><button class="dropbtn">Services</button></a>
+  <div class="dropdown-content">
+    <a href="#digitalSecurity">Digital Sikkerhed</a>
+    <a href="#branding">Branding</a>
+    <a href="#webdev">Webudvikling</a>
+	<a href="#hotbot">HotBot Solutions</a>  
+  </div>
+</div>
+        <ul>
+ 
+       <!-- <li><a href="#">Digital Sikkerhed</a></li>
+        <li><a href="#">Branding</a></li>
+        <li><a href="#">Webudvikling</a></li>-->
+            <li><a href="#hotbot">HotBot Webshops</a></li>
+            <li><a href="#pakker">Pakker</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+       
+        <li><form>
+            <input type="text" name="search" placeholder="Search..">
+        </form>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+
+	
+	<section id="home_content">
+	<h1><h1>Hvad og hvem er Sweetbot?</h1></h1>
+		<p>
+			<strong>Sweetbot.design</strong> er en startup-virksomhed, der er internationalt orienteret med fokus på det danske marked. Vi tilbyder services og rådgivning indenfor webdesign og webudvikling, branding og visuel identitet, samt internetsikkerhed (netværks- og datasikkerhed). Derudover distribuerer vi vores egen brugerdefinerede webshop-løsning HotBot.
+		</p>
+<p>
+			sweetbot.design er en startup-virksomhed, der er internationalt orienteret med fokus på det danske marked. Vi tilbyder services og rådgivning indenfor webdesign og webudvikling, branding og visuel identitet, samt internetsikkerhed (netværks- og datasikkerhed). Derudover distribuerer vi vores egen brugerdefinerede webshop-løsning HotBot.
+		</p>
+	<p>
+		Vores hold består af 2 CEOs, 4 medarbejdere, og en utæmmelig flok tilknyttede freelancere.
+	</p>
+	<p>	
+		Kontakt os i dag for at høre om vores services, rådgivning og pristilbud!
+	</p>	
+	
+
+	</section>	
+	<section id="services">
+	<h1>Sweetbot services</h1>
+		
+	<div id="box1">
+<h2>Hjemmesider</h2>
+	<img src="Ikoner/icon_web_dev_h250px.png"  alt="Web Development icon"/>
+	<h3>Responsive webdesign</h3>
+	<h3>Javascript</h3>
+	<h3>Det nyeste HTML og CSS</h3>
+</div>
+	
+<div id="box2">
+<h2>Sikkerhed</h2>	
+	<img src="Ikoner/icon_security_h250px.png"  alt="Web Security icon"/>
+	<h3>Bliv sikker imod hackere</h3>
+	<h3>Lær mere om internetsikkerhed</h3>
+	<h3>Opdatered dagligt</h3>
+	<h3>Support 24/7</h3>
+</div>
+	
+<div id="box3">
+<h2>Branding</h2>
+	<img src="Ikoner/icon_branding_h250px.png"  alt="Branding icon"/>
+<h3>Vi hjælper med at lave din identitet</h3>
+<h3>Få mere exposure med adds og marketing</h3>
+</div>
+	</section>
+	<section id="digitalSecurity">
+	<h1>Digital Sikkerhed</h1>
+	<p>Alle vores systemer følger de nyeste sikkerhedsprotokoller, og bliver opdateret løbende, så du ikke skal bekymre dig for om din data er beskyttet. Vi hos sweetbot.design går højt op i, at vores kunder skal føle sig sikre.
+	Derudover tilbyder vi rådgivning og support ifølgemed digital sikkerhed, så du og din virksomhed er klædt ordentligt på til at kunne identificere og håndtere digitale farer.
+
+	<br><sub>"med sweetbot.design kan jeg sove trygt om natten velvidende at min virksomheds data er sikret." - Albert Einstein, CEO af Relativity Theoriez</sub></p>
+	
+	
+	</section>	 
+	<section id="branding">
+		<h1>Branding</h1>
+<p>Vil du gerne nå til toppen på dit marked? Så har du brug for vores ekspertrådgivning indenfor branding. Uanset om dit brand har eksisteret længe, eller om du først er ved at gøre dig tanker om hvordan dit brand skal gøres genkendeligt, vil vores eksperter sammen med dig kunne styrke din branding.
+
+		Ring i dag og hør om, hvad vi kan gøre for at få dig til tops!
+
+	<br><sub>"Efter en 9-11 år med et intetsigende logo, har min virksomhed endelig fået den perfekte visuelle identitet!"
+	- Steve Buscemi, brandmand</sub></p>
+	
+	</section>	
+	<section id="webdev">
+	<h1>Webudvikling</h1>
+	<p>
+	Vi tilbyder dig vores anerkendte CMS-system sweetbot, der gør det til en leg at organisere indholdet på din hjemmeside.
+	Sammen med dig finder vi ud af, hvordan strukturen på din hjemmeside skal se ud, hvordan indholdet skal præsenteres, og hvad hjemmesiden skal kunne.
+		<br><sub>"sweetbot gør det nemt for mig at tilføje indhold på min side, og det ser pokkers godt ud!" - Abraham Lincoln, iværksætter</sub></p>
+	
+	
+</section>
+
+<section id="hotbot"><h1>HotBot Webshops</h1> 
+	<img id="logo" src="Ikoner/hotbot_element.svg" height="150px" alt="Hotbot robot"> 
+<p>Du har brug for en webshop, der er nem at køre og giver dine kunder de bedste muligheder for at shoppe!
+  Derfor er vi stolte af at præsentere HotBot, som er vores splinternye e-commerce løsning.
+  Med HotBot får du adgang til værktøjer, der gør at du kan brugerdefinere din webshop så den får det udtryk, du har brug for.
+  Du kan nemt organisere indholdet i din webshop, og HotBot samler købsstatistikken som du kan eksportere i flere forskellige formater, der passer dig. Vi understøtter bl.a. Dinero.
+  Med HotBot er det muligt for kunden problemfrit at shoppe løs på din hjemmeside, og betalingen foregår over en sikker forbindelse, sikret af vores datasikkerhedssystem.
+  
+  HotBot er den perfekte løsning til dig, der vil have styr på dine websalg, uden at skulle benytte sig af online websider der tager en procentdel af dine indtjeninger. HotBot leveres som et plugin der betales på subscription basis.
+  
+  Kontakt os i dag og hør mere!</p>
+	
+	
+	</section>
+	<section id="pakker"><h1>Vores pakker tilbud</h1>
+	
+		<div id="pakkebox">
+			<figure class="snip1249">
+  <div class="image">
+    <img src="Ikoner/hotbot_element.svg" alt="hotbot"/><i class="ion-ios-camera-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Hotbot solution</h3>
+    <p>full online-shop solution in one</p>
+    <div class="price">
+      <s>20.000 dkk</s>15.000 dkk
+    </div>
+    <a href="#" class="add-to-cart">bestil</a>
+  </figcaption>
+</figure>
+<figure class="snip1249 hover">
+  <div class="image">
+    <img src="Ikoner/icon_branding_h250px.png" alt="pakke 1"/><i class="ion-ios-star-outline"></i>
+  </div>
+  <figcaption>
+    <h3>webshop starterkit<st></st></h3>
+    <p>hjemmeside + webshop + branding</p>
+    <div class="price">
+      <s>10.000 dkk</s>8.000 dkk
+    </div>
+    <a href="#" class="add-to-cart">bestil</a>
+  </figcaption>
+</figure>
+<figure class="snip1249">
+  <div class="image">
+    <img src="Ikoner/icon_security_h250px.png" alt="pakke 2"/><i class="ion-ios-camera-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Tilkøb til hjemmeside</h3>
+	  <p>branding + sikkerhed + webshop* <br> <sub>*webshop kan tilkøbes</sub></p>
+    <div class="price">
+      <s>15.000 dkk</s>13.000 dkk
+    </div>
+    <a href="#" class="add-to-cart">Bestil</a>
+  </figcaption>
+</figure>
+	
+		</div>
+
+	</section>
+	<section id="contact">
+	<h1>Kontakt os her</h1>
+		
+	<form id="contactform">
+  		<div class="container">
+    		<div class="head">
+      			<h2>Kontakt os her</h2>
+    		</div>
+    		<input  type="name" name="name" placeholder="Your name" /><br />
+			<input  type="email" name="email" placeholder="Email" /><br />
+    		<textarea type="text" name="message" placeholder="Message"></textarea><br />
+    		<div class="message">
+				Message Sent
+			</div>
+    			<button id="submit" type="submit">Send!</button>
+  			</div>
+	</form>
+	
+	
+	
+	</section>
+
+		
+<button class="button">Chat med os</button>
+
+		
+	<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><img src="Ikoner/sort_twitter_icon.png" width="50" height="50" alt=""/></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+				<div id="footer_links">
+				<p class="footer-links">
+					<a href="#home-content">HOME</a> ·
+					
+					<a href="#digitalSecurity">DIGITAL SIKKERHED</a> ·				
+					
+					<a href="#branding">BRANDING</a> ·
+					
+					<a href="#webdev">WEBDEV</a> ·
+					
+					<a href="#hotbot">HOTBOT</a> ·				
+					
+					<a href="#contact">KONTAKT OS</a> ·
+					
+				</p>
+
+				<p>sweetbot.design &copy; 2017</p>
+				</div>
+				</div>
+
+		</footer>
+	    <script>
+    function myFunction() {
+    var element = document.getElementById("myNav");
+    element.classList.toggle("mystyle");
+}
+
+    </script>
+</body>
+</html>
