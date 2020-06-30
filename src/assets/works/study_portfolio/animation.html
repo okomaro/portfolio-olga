@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=0;">
+<meta name="description" content="Portfolio of the 1st semester student CPH Business academy, multimediadesign">
+<meta name="keywords" content="website design, multimedia design, logo, branding">
+<link rel="shortcut icon" type="image/x-icon" href="images/rose-favicon.ico">
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+
+<!--upload of font awesome and the list of common reference https://www.w3schools.com/icons/fontawesome_icons_intro.asp-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="styles/responsive.css" rel="stylesheet" type="text/css">
+<title>Animation</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111544888-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111544888-1');
+</script>
+</head>
+
+<body  lang="da-DK">
+<div>
+  <header class="main-header">
+    <div> <a href="index.html"><img class="header-image logo"  src="images/rose-logo.png" width="100" height="100" alt="rose"></a> </div>
+    <div class="header-text">
+      <h1>okomaro:design</h1>
+      <h4>multimedia, graphic design, social media</h4>
+    </div>
+    <nav class="navbar">
+      <ul class="navlist">
+        <li class="navlistitem"><a href="index.html">home</a> </li>
+        <li class="navlistitem"><a href="index.html">om mig</a> </li>
+        <li class="navlistitem"><a href="projects.html">Projekter</a></li>
+        <li class="navlistitem"><a href="study.html" >Læring</a></li>
+        <li class="navlistitem"><a href="contact.html">kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="back_button" href="javascript:history.back()"><i class="fa fa-backward"></i>&nbsp;&nbsp;tilbage</a> </header>
+  <div class="core"> 
+    <!--	  beginning of the content section -->
+    <section id="study" class="group">
+      <header class="section-header">
+        <h1>Semester 2, Flow 4</h1>
+        <p> om projekt</p>
+      </header>
+      <div  class="main-content">
+        <h2>Individuel Animate CC opgave: HTML 5 banner reklamer</h2>
+        <h3>En interaktiv HTML 5 banner reklame</h3>
+        <p> Man skal udvikle en interaktiv, animeret banner reklame med Adobe's authoring værktøj Animate CC. Temaet er selvvalgt, du skal dog følge IAB's retningslinjer (links i Animate sektionen) til HTML banner ads (formater, størrelser etc.).</p>
+        
+        <h3>Din banner reklame skal som minimum indeholde:</h3>
+        <ul>
+          <li>En animation (timeline/frame baseret eller kodet) </li>
+          <li> JavaScript (fx timeline control, buttons etc.)</li>
+          <li>Selvproduceret visuelt indhold</li>
+        </ul>
+		
+		
+		<h3>Resultat</h3>
+<div class="canvas-container">
+		<iframe src="http://okomaro.bplaced.net/Portfolio_2_1/banner1.html"></iframe>
+	 <p>Størelse 728x90 </p>
+	<p>Tema: restaurant, cafe</p>
+	
+</div>
+		  <h3>Hvordan jeg har arbejdet med IAB's ad guidelines.</h3>
+		  <p>foreklaring</p>
+			  
+			  
+		 </div>
+    </section> 
+  </div>
+  <footer>
+    <p class="copyright">&copy; 2017, Olga Komarova, okomaro:design <br>
+      last updated: December 2017</p>
+    <ul class="social">
+      <li> <a href="https://github.com/okomaro" target="_blank"> <i class="fa fa-github-square"></i> </a> </li>
+      <li> <a href="https://www.linkedin.com/in/olga-komarova-6840784a/" target="_blank"> <i class="fa fa-linkedin-square"></i> </a> </li>
+      <li> <a href="https://www.pinterest.dk/okomaro/" target="_blank"><i class="fa fa-pinterest-square"> </i> </a> </li>
+      <li> <a href="https://vimeo.com/user77345020" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+    </ul>
+  </footer>
+  <button onclick="topFunction()" id="myBtn" title="Go to top" style="font-size:small">Go to top&nbsp;&nbsp;<i class="fa fa-angle-double-up"></i></button>
+  <script>
+
+/*Script for button "Go to top*/
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+	</script> 
+</div>
+</body>
+</html>

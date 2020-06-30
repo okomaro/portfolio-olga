@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* Responsive Styles with CSS media query */
+
+@media all and (max-width : 768px) {
+	
+	
+/*Navigation - responsive*/
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 100px;
+	overflow: hidden;
+
+}
+
+.navlistitem {
+	display:inline-block;
+	float: left;
+	margin: 10px 5px;
+	box-shadow: none;
+
+}
+	
+.navlistitem a {
+	padding: 5px 10px;
+	margin: inherit;
+	text-decoration: none;	
+}
+	
+/*All other structrure*/
+	
+.main-header {
+	border: none;
+}
+.main-header {
+	min-height: 100px;
+	position: fixed;
+	z-index: 99;
+}
+.section-header p, h1 {
+	width: 100%;
+	padding-left: 20px;
+}
+	
+.header-text {
+	text-align: left;
+	width: 100%;
+	font-size: small;
+	position: fixed;
+	left: 100px;
+	top: 35px;
+}
+p {
+	width: inherit;
+}
+footer {
+	position: inherit;
+}
+.core {
+	border-left: none;
+	padding: 50px 0;
+}
+.section-header {
+	background-image: none;
+	border-bottom: solid 1px grey;
+	margin-top: 40px;
+	padding: 0;
+	display: inline-block;
+}
+.work {
+	float: left;
+}
+.main-content, .secondary-content, .full-width-content, .group {
+	width: 100%;
+	min-width: 400px;
+	overflow-x: scroll;
+	display: inline-block;
+	margin: auto;
+	padding: 10px 30px 40px 30px;
+}
+button {
+	display: block;
+	position: relative;
+	left: 5%;
+}
+	
+.back_button {
+	display: none;
+}
+}
+/* end media query */
